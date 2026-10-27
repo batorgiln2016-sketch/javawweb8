@@ -1,1 +1,21 @@
-   <!-- Write your code here -->
+<!doctype html>
+<html>
+  <body>
+    <div id="box" style="width: 100px; height: 100px; background: orange"></div>
+    <script>
+      let box = document.getElementById("box");
+      let size = 100;
+      box.onclick = function () {
+        size = size + 20;
+        box.style.width = size + "px";
+        box.style.height = size + "px";
+      };
+      box.ondblclick = function () {
+        size = 100;
+        box.style.width = size + "px";
+        box.style.height = size + "px";
+      };
+    </script>
+  </body>
+</html>
+
