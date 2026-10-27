@@ -1,1 +1,28 @@
-
+<!doctype html>
+<html>
+  <body>
+    <h1 id="num">0</h1>
+    <button id="minus">-</button>
+    <button id="plus">+</button>
+    <button id="reset">Reset</button>
+    <script>
+      let n = 0;
+      let num = document.getElementById("num");
+      document.getElementById("plus").addEventListener("click", function () {
+        n++;
+        num.textContent = n;
+        num.style.color = n < 0 ? "red" : "black";
+      });
+      document.getElementById("minus").addEventListener("click", function () {
+        n--;
+        num.textContent = n;
+        num.style.color = n < 0 ? "red" : "black";
+      });
+      document.getElementById("reset").addEventListener("click", function () {
+        n = 0;
+        num.textContent = n;
+        num.style.color = "black";
+      });
+    </script>
+  </body>
+</html>
